@@ -1,0 +1,87 @@
+.select {
+	margin: 20px;
+}
+.select.open .list {
+	opacity: 1;
+	transition: opacity 0.5s linear;
+	height: 100%;
+}
+.select.open .title::after {
+	content: '';
+	transform: rotate(585deg);
+	position: relative;
+	top: -2px;
+}
+.list {
+	margin: 0;
+	padding: 5px;
+	list-style-type: none;
+	background-color: blueviolet;
+	max-width: 210px;
+	border-radius: 5px;
+	color: white;
+	height: 0;
+	opacity: 0;
+}
+.title {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	padding: 10px;
+	border-radius: 5px;
+	transition: 0.3s;
+	background-color: rgb(101, 216, 78);
+	width: 196px;
+	gap: 3px;
+}
+.title:hover {
+	background-color: aquamarine;
+}
+.title:after {
+	content: '';
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+	transform: rotate(135deg);
+	width: 6px;
+	height: 6px;
+	transition: 0.3s;
+}
+
+.content {
+	background-color: rgb(216, 213, 213);
+}
+.text {
+	border-top: 5px solid chartreuse;
+	padding: 10px 20px;
+	position: relative;
+}
+h3 {
+	margin: 0;
+}
+.button {
+	cursor: pointer;
+	background-color: transparent;
+	color: brown;
+	border: none;
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+.field {
+	width: 300px;
+	height: 300px;
+	background-color: rgb(11, 199, 11);
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.ball {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: 1s all;
+	width: 40px;
+	height: 40px;
+}
